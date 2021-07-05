@@ -220,6 +220,11 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@domchristie/needles@^0.0.2-1":
+  version "0.0.2-1"
+  resolved "https://registry.nlark.com/@domchristie/needles/download/@domchristie/needles-0.0.2-1.tgz#23cdfda244175846b27349be1974b8817a29c483"
+  integrity sha1-I839okQXWEayc0m+GXS4gXopxIM=
+
 "@fullhuman/postcss-purgecss@^4.0.3":
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/@fullhuman/postcss-purgecss/download/@fullhuman/postcss-purgecss-4.0.3.tgz#55d71712ec1c7a88e0d1ba5f10ce7fb6aa05beb4"
@@ -531,6 +536,11 @@ csstype@^3.0.2:
   version "3.0.8"
   resolved "https://registry.nlark.com/csstype/download/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
   integrity sha1-0iZqeScp+yJ80hb7Vy9Dco4a00A=
+
+daisyui@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.nlark.com/daisyui/download/daisyui-1.6.1.tgz#052d491f7246d81b88c602e21ed0b0e92b75f775"
+  integrity sha1-BS1JH3JG2BuIxgLiHtCw6St193U=
 
 debug@^4.1.0:
   version "4.3.2"

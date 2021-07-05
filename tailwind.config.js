@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.ts'],
+  purge: ['./index.html', './src/**/*.tsx'],
   darkMode: false,
   theme: {
     extend: {},
@@ -7,5 +7,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }
