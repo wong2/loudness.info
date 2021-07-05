@@ -19,7 +19,7 @@ async function measure(file: File): Promise<number> {
   const loudnessMeter = new LoudnessMeter({
     source,
     modes: ['integrated'],
-    workerUri: '/node_modules/@domchristie/needles/dist/needles-worker.js',
+    workerUri: '/needles-worker.js',
   })
 
   const result = new Promise<number>((resolve, reject) => {

@@ -12,8 +12,8 @@ function App() {
     setState('measuring')
     try {
       const lufs = await measure(file)
-      setLoudness(lufs.toFixed(2))
-      setState('failed')
+      setLoudness(lufs.toFixed(1))
+      setState('measured')
     } catch (err) {
       setState('failed')
     }
