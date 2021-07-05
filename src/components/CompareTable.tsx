@@ -13,7 +13,7 @@ function compare(value: number, standard: number, tolerance: number = 0): string
 const CompareTable: React.FC<{ value: number }> = ({ value }) => {
   return (
     <div className="flex flex-col items-center mt-5">
-      <div className="alert alert-info w-1/2">
+      <div className="alert alert-info mx-2">
         <div className="flex-1">
           <label>
             <a href="https://en.wikipedia.org/wiki/LUFS" target="_blank">
