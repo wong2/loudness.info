@@ -6,7 +6,7 @@ function compare(value: number, standard: number, tolerance: number = 0): string
     return 'perfect'
   }
   if (rounded < standard - tolerance) {
-    return 'too quite'
+    return 'too quiet'
   }
   return 'too loud'
 }
