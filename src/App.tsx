@@ -39,7 +39,7 @@ function App() {
               <div className="flex flex-col">
                 <div className="stats shadow mt-5">
                   <div className="stat">
-                    <div className="stat-title">Loudness of {filename}</div>
+                    <div className="stat-title overflow-x-auto overflow-ellipsis">Loudness of {filename}</div>
                     {state === 'measured' ? (
                       <div className="stat-value text-secondary">{loudness} LUFS</div>
                     ) : state === 'failed' ? (
