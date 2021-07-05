@@ -1,10 +1,11 @@
 import React from 'react'
 
 function compare(value: number, standard: number, tolerance: number = 0): string {
-  if (value >= standard - tolerance && value <= standard + tolerance) {
+  const rounded = Math.round(value)
+  if (rounded >= standard - tolerance && rounded <= standard + tolerance) {
     return 'perfect'
   }
-  if (value < standard - tolerance) {
+  if (rounded < standard - tolerance) {
     return 'too quite'
   }
   return 'too loud'
