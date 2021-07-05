@@ -16,6 +16,7 @@ function App() {
       setLoudness(parseFloat(lufs.toFixed(1)))
       setState('measured')
     } catch (err) {
+      console.error(err)
       setState('failed')
     }
   }, [])
