@@ -25,6 +25,10 @@ function App() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
   }, [])
 
+  const reset = useCallback(() => {
+    setState('idle')
+  }, [])
+
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
@@ -40,7 +44,9 @@ function App() {
               <div className="flex flex-col">
                 <div className="stats shadow mt-5">
                   <div className="stat">
-                    <div className="stat-title overflow-x-auto overflow-ellipsis">Loudness of {filename}</div>
+                    <div className="stat-title overflow-x-auto overflow-ellipsis">
+                      Loudness of {filename}
+                    </div>
                     {state === 'measured' ? (
                       <div className="stat-value text-secondary">{loudness} LUFS</div>
                     ) : state === 'failed' ? (
@@ -51,9 +57,14 @@ function App() {
                   </div>
                 </div>
                 {state === 'measured' && (
-                  <button className="btn btn-outline btn-accent mt-5" onClick={scrollToBottom}>
-                    what does this mean?
-                  </button>
+                  <div className="flex flex-row mt-5 w-full justify-around">
+                    <button className="btn btn-outline btn-accent" onClick={scrollToBottom}>
+                      what does this mean?
+                    </button>
+                    <button className="btn btn-outline ml-1" onClick={reset}>
+                      Reset
+                    </button>
+                  </div>
                 )}
               </div>
             )}
