@@ -35,7 +35,7 @@ function App() {
         <div className="text-center hero-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">loudness.info</h1>
-            <p className="mb-5">Measure loudness of your music or podcast</p>
+            <p className="mb-5">Measure loudness of your music or podcasts</p>
             {state === 'idle' ? (
               <FileInput accept="audio/*" onSelect={onFileSelected}>
                 <button className="btn btn-secondary btn-outline">select file</button>
