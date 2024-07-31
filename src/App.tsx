@@ -59,13 +59,24 @@ function App() {
                   </div>
                 </div>
                 {state === 'measured' && (
-                  <div className="flex flex-row mt-5 w-full justify-around">
-                    <button className="btn btn-outline btn-accent" onClick={scrollToBottom}>
-                      what does this mean?
-                    </button>
-                    <button className="btn btn-outline ml-1" onClick={reset}>
-                      Reset
-                    </button>
+                  <div className="mt-2">
+                    <p>
+                      <a
+                        href="https://buymeacoffee.com/wong2"
+                        target="_blank"
+                        className="underline underline-offset-2 text-sm text-gray-400"
+                      >
+                        Buy me a coffee
+                      </a>
+                    </p>
+                    <div className="flex flex-row mt-3 w-full justify-center gap-3">
+                      <button className="btn btn-outline btn-accent" onClick={scrollToBottom}>
+                        what does this mean?
+                      </button>
+                      <button className="btn btn-outline ml-1" onClick={reset}>
+                        Reset
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
